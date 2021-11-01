@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 double centimetro = Double.parseDouble(editInput.getText().toString());
                 double jardas = centimetro/91.44;
-                DecimalFormat df = new DecimalFormat("0.00");
+                DecimalFormat df = new DecimalFormat("0.00000");
                 textOutput.setText("valor em Jardas: \n"+df.format(jardas));
             }
         });
